@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!-- Listener -->
+    <listener>
+        <listener-class>com.sistemaalunos.listener.AlunoServiceListener</listener-class>
+    </listener>
+
+    <!-- Servlets -->
+    <servlet>
+        <servlet-name>AdicionarAlunoServlet</servlet-name>
+        <servlet-class>com.sistemaalunos.controller.AdicionarAlunoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdicionarAlunoServlet</servlet-name>
+        <url-pattern>/adicionarAluno</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ListarAlunosServlet</servlet-name>
+        <servlet-class>com.sistemaalunos.controller.ListarAlunosServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListarAlunosServlet</servlet-name>
+        <url-pattern>/listarAlunos</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditarAlunoServlet</servlet-name>
+        <servlet-class>com.sistemaalunos.controller.EditarAlunoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditarAlunoServlet</servlet-name>
+        <url-pattern>/editarAluno</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AtualizarAlunoServlet</servlet-name>
+        <servlet-class>com.sistemaalunos.controller.AtualizarAlunoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AtualizarAlunoServlet</servlet-name>
+        <url-pattern>/atualizarAluno</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeletarAlunoServlet</servlet-name>
+        <servlet-class>com.sistemaalunos.controller.DeletarAlunoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeletarAlunoServlet</servlet-name>
+        <url-pattern>/deletarAluno</url-pattern>
+    </servlet-mapping>
+    
+    <welcome-file-list>
+        <welcome-file>listarAlunos</welcome-file>
+    </welcome-file-list>
+</web-app>
