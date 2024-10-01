@@ -4,7 +4,6 @@
 
 Este projeto é um sistema de cadastro de alunos desenvolvido como parte da **R1 Parcial**. O sistema permite realizar operações básicas de CRUD (Create, Read, Update, Delete) para gerenciar o cadastro de alunos em um banco de dados. O projeto foi desenvolvido usando **Java** e **JSP** no backend, e possui uma interface simples e responsiva para o usuário.
 
-<<<<<<< HEAD
 ### Objetivos da R1 Parcial
 
 A R1 Parcial solicitou a criação de um sistema que pudesse manipular dados de alunos, como nome, email, curso e ano de ingresso. A implementação deste sistema cumpre os seguintes requisitos da R1 Parcial:
