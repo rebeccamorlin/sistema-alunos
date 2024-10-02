@@ -10,8 +10,8 @@
     <packaging>war</packaging>
 
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>22</maven.compiler.source> <!-- Atualizado para Java 22 -->
+        <maven.compiler.target>22</maven.compiler.target> <!-- Atualizado para Java 22 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -63,8 +63,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>22</source> <!-- Atualizado para Java 22 -->
+                    <target>22</target> <!-- Atualizado para Java 22 -->
                 </configuration>
             </plugin>
         </plugins>
